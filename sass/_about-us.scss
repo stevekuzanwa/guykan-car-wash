@@ -1,0 +1,137 @@
+
+
+/******************************************************/
+/************** START: ABOUT US SECTION ***************/
+/******************************************************/
+
+.about-us {
+  margin-top: 575px;
+  padding-top: 85px;
+  padding-bottom: 80px;
+}
+
+/** About Us Title **/
+
+.about-us {
+    
+    .title {
+       font-size: 30px;
+       font-weight: bold;
+       margin-top: -7px;
+
+    }
+    
+    .title:after {
+       display: block;
+       content:"";
+       height:12px;
+       width: 82px;
+       background-color: #26543a;
+       margin-top: 16px;
+    }
+    
+    h2 {
+        margin-bottom: 28px; 
+    }
+
+    
+} 
+
+
+/** About Us Description **/
+
+.about-us {
+    
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    
+    .btn-default {
+        color: #fff;
+        background-color: #26543a;
+        border-color: transparent;
+        border-radius: 0;
+        margin-top: 10px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 16px;
+        font-weight: bold;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s; 
+        border: 2px solid transparent;
+        border-radius: 0;
+    }
+    
+    .btn:hover {
+        color: #26543a;
+        background-color: #fff;
+        border: 2px solid #26543a; 
+    }
+   
+} 
+
+
+/** POPUP - ABOUT US READ MORE CONTENT  **/
+
+.about-us-popup {
+  position: relative;
+  background: #fff;
+  width: auto;
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 16px;
+    
+    img {
+        width: 100%;
+    }
+    
+    P {
+      padding: 20px;
+    }
+
+    
+}
+
+
+/*************** MEDIA QUERIES FOR THE ABOUT US SECTION ****************/
+
+@media only screen and (max-width: 1024px) {
+    .about-us {
+      margin-top: 420px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .about-us .btn {
+     margin-bottom: 25px;
+   }
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .about-us {
+        
+        .title {
+           font-size: 25px;
+        }
+        
+        .title:after {
+           height:6px;
+           width: 42px;
+           margin-top: 10px;
+        }
+        
+    }  
+    
+}
+
+
+/****************************************************/
+/************** END: ABOUT US SECTION ***************/
+/****************************************************/

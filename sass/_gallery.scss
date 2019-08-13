@@ -1,0 +1,105 @@
+
+
+/**********************************************************/
+/**************** START: GALLERY SECTION ******************/
+/**********************************************************/
+
+.gallery {
+    
+    .container {
+       text-align: center;
+       padding-top: 75px;
+    }
+    
+} 
+
+/** Gallery Introduction **/
+
+.gallery {
+    
+    .title {
+       font-size: 30px;
+       font-weight: bold;
+       margin-top: 0;
+       margin-bottom: 28px;
+    }
+    
+    .title:after {
+       display: block;
+       content:"";
+       height:12px;
+       width: 82px;
+       background-color: #26543a;
+       margin: 0 auto;
+       margin-top: 16px;
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 30px;
+    }
+    
+} 
+
+
+/** showcase Gallery **/
+
+.gallery {
+    
+    .col-md-4 {
+        padding-bottom: 30px;
+        
+        .showcase { 
+            overflow: hidden;
+            
+            a {
+               text-decoration: none;   
+            }
+        }
+        
+    }
+    
+    img {
+        -webkit-transition: all 1s;
+        transition: all 1s;
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    img:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    
+} 
+
+
+/*************** MEDIA QUERIES FOR THE GALLERY SECTION ****************/
+
+@media only screen and (max-width: 480px) {
+    
+    .gallery {
+        
+        .title {
+            font-size: 25px;
+        }
+        
+        .title:after {
+            height:6px;
+            width: 42px;
+            margin-top: 10px;
+        }
+        
+        .col-xs-6 {
+            width: 100%;
+        }
+        
+    } 
+    
+}
+
+/*********************************************************/
+/****************** END: GALLERY SECTION *****************/
+/*********************************************************/

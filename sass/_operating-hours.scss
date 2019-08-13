@@ -1,0 +1,76 @@
+
+
+/*************************************************************/
+/************** START: OPERATING HOURS SECTION ***************/
+/*************************************************************/
+
+.operating-hours {
+   background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.6))), url(../images/photos/car-wash-operating-hours/bg-operating-hours.jpg);
+   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/photos/car-wash-operating-hours/bg-operating-hours.jpg); 
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: left center;
+   background-attachment: fixed;
+   height: 460px;
+   color: #fff;
+   margin-top: 62px;
+    
+    p {
+        font-size: 36px;
+        text-align: center;
+        padding: 150px   10px 120px;
+        line-height: 150%;
+
+    }
+    
+}
+
+
+/*************** MEDIA QUERIES FOR THE OPERATING HOURS SECTION ****************/
+
+
+@media only screen and (max-width: 700px) {
+   
+   .operating-hours {
+     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.6))), url(../images/photos/car-wash-operating-hours/small-bg-operating-hours.jpg);
+     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/photos/car-wash-operating-hours/small-bg-operating-hours.jpg);
+       
+      p {
+          font-size: 24px;
+          padding: 180px   10px 120px;
+      }
+       
+   }
+    
+}
+
+@media only screen and (max-width: 490px) {
+    
+    .operating-hours  {
+        
+        p {
+            font-size: 24px;
+            padding: 160px   10px 120px;
+        } 
+        
+    } 
+}
+
+
+@media only screen and (max-width: 320px) {
+    
+    .operating-hours {
+        
+        p {
+            font-size: 18px;
+            padding: 180px   10px 120px;
+        }
+        
+    } 
+    
+}
+
+/***********************************************************/
+/************** END: OPERATING HOURS SECTION ***************/
+/***********************************************************/
+

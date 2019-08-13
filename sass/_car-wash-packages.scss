@@ -1,0 +1,117 @@
+
+
+/*****************************************************************/
+/************** START: CAR WASH PACKAGES SECTION *****************/
+/*****************************************************************/
+
+
+.car-wash-packages {
+    
+    .container {
+        text-align: center;
+        padding-top: 75px;
+    }
+    
+} 
+
+/** Car Wash Packages Introduction **/
+
+.car-wash-packages {
+    
+    .title  {
+       font-size: 30px;
+       font-weight: bold;
+       margin-top: 0;
+       margin-bottom: 28px;
+    }
+    
+    .title:after {
+       display: block;
+       content:"";
+       height:12px;
+       width: 82px;
+       background-color: #26543a;
+       margin: 0 auto;
+       margin-top: 16px;
+    }
+    
+    .col-md-12 {
+        margin-bottom: 28px;
+        
+        p {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }   
+    
+} 
+
+
+/** Our Packages **/
+
+.car-wash-packages {
+    
+    .thumbnail {
+        
+        display: block;
+        padding: 0;
+        margin-bottom: 20px;
+        line-height: 1.42857143;
+        background-color: #26543a;
+        border: 1px solid #26543a;
+        border-radius: 0;
+        
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #26543a;
+        }
+        
+        p {
+            color: #fff;
+            background-color: #26543a;
+            line-height: 300%;
+        }
+        
+        p.price {
+            background-color: #fff;
+            color: #26543a;
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 140%;
+        } 
+           
+    }
+    
+}  
+
+
+/*************** MEDIA QUERIES FOR THE CAR WASH PACKAGES SECTION ****************/
+
+@media only screen and (max-width: 480px) {
+    
+    .car-wash-packages {
+        
+        .title {
+           font-size: 25px;
+         }
+        
+        .title:after {
+           height:6px;
+           width: 42px;
+           margin-top: 10px;
+        }
+        
+    }   
+    
+}
+
+/***************************************************************/
+/************** END: CAR WASH PACKAGES SECTION *****************/
+/***************************************************************/

@@ -1,0 +1,71 @@
+
+
+/**********************************************************/
+/************** START: TESTIMONIALS SECTION ***************/
+/**********************************************************/
+
+.testimonials {
+   background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.6))), url(../images/photos/car-wash-client-testimonials/bg-car-wash-client-testimonials.jpg);
+   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/photos/car-wash-client-testimonials/bg-car-wash-client-testimonials.jpg); 
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: left center;
+   background-attachment: fixed;
+   height: 460px;
+   color: #fff;
+   margin-top: 52px;
+    
+    p {
+        font-size: 16px;
+        text-align: center;
+        padding: 155px 10px 120px;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 150%;
+    }
+    
+}
+
+
+/*************** MEDIA QUERIES FOR THE TESTIMONIALS SECTION ****************/
+
+@media only screen and (max-width: 700px) {
+   .testimonials {
+       background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.6)),to(rgba(0,0,0,0.6))), url(../images/photos/car-wash-client-testimonials/small-bg-car-wash-client-testimonials.jpg);
+       background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/photos/car-wash-client-testimonials/small-bg-car-wash-client-testimonials.jpg); 
+   }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .testimonials  {
+        
+        .container {
+            
+            p {
+               padding: 145px 10px 80px;
+            }
+        } 
+        
+    }
+       
+       
+}
+
+@media only screen and (max-width: 320px) {
+    
+    .testimonials {
+        
+        .container {
+            
+            p {
+               padding: 120px 10px 80px;
+            }
+            
+        } 
+    } 
+}
+
+/********************************************************/
+/************** END: TESTIMONIALS SECTION ***************/
+/********************************************************/

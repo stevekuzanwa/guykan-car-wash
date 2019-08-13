@@ -1,0 +1,966 @@
+/******************************************************/
+/******************* GENERAL STYLES *******************/
+/******************************************************/
+/******************************************************/
+/******************* GENERAL STYLES *******************/
+/******************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/******************************************************/
+/*************** END OF GENERAL STYLES ****************/
+/******************************************************/
+/******************************************************/
+/*************** END OF GENERAL STYLES ****************/
+/******************************************************/
+/******************************************************/
+/*************** START: HEADER SECTION ****************/
+/******************************************************/
+/******************************************************/
+/*************** START: HEADER SECTION ****************/
+/******************************************************/
+/**********************************************/
+/*************** START: MIXINS ****************/
+/**********************************************/
+/**********************************************/
+/**************** END: MIXINS *****************/
+/**********************************************/
+/** Navigation **/
+.header .navigation {
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent;
+  position: fixed;
+  top: 0; }
+  .header .navigation h1 {
+    float: left;
+    padding: 0 0 10px 10px;
+    font-size: 26px;
+    font-weight: bold;
+    z-index: 999; }
+    .header .navigation h1 a {
+      text-decoration: none;
+      color: #fff; }
+
+/** Nav Menu **/
+.header .navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right; }
+  .header .navigation ul li {
+    float: left; }
+    .header .navigation ul li a:link,
+    .header .navigation ul li a:visited {
+      display: block;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      padding: 24px  10px 24px;
+      text-decoration: none;
+      color: #fff;
+      -webkit-transition: .3s;
+      transition: .3s; }
+    .header .navigation ul li a:hover,
+    .header .navigation ul li a:active {
+      color: #0ee56b; }
+
+/** StickyNav with jQuery**/
+.is-sticky .navigation {
+  background-color: #fff;
+  border-bottom: 1px solid #b5b2b2;
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+  .is-sticky .navigation h1 a {
+    padding: 0 0 10px;
+    color: #26543a; }
+  .is-sticky .navigation nav ul a:link,
+  .is-sticky .navigation nav ul a:visited {
+    color: #26543a; }
+  .is-sticky .navigation nav ul a:hover,
+  .is-sticky .navigation nav ul a:active {
+    color: #0aaa50; }
+  .is-sticky .navigation nav ul a.active {
+    background-color: #26543a;
+    color: #fff; }
+
+/** Mobile Nav Menu Icon **/
+.mobileNavIcon {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  display: none; }
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s; }
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px); }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -6px);
+  transform: rotate(45deg) translate(-7px, -6px); }
+
+.is-sticky .navigation .mobileNavIcon .bar1,
+.is-sticky .navigation .mobileNavIcon .bar2,
+.is-sticky .navigation .mobileNavIcon .bar3 {
+  background-color: #26543a; }
+
+/** BG Slides **/
+.header #homme {
+  z-index: 1;
+  position: relative;
+  height: 650px; }
+.header .slides {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+  .header .slides .slide1 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url(../images/photos/header/bg-full-service-car-wash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/photos/header/bg-full-service-car-wash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 650px; }
+  .header .slides .slide2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/bg-super-clean-shine.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/bg-super-clean-shine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 650px; }
+  .header .slides .slide3 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/bg-first-class-wash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/bg-first-class-wash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 650px; }
+  .header .slides .slide4 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/bg-excellent-quality-services.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/bg-excellent-quality-services.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 650px; }
+
+/** Header Subtitle ***/
+.header .title {
+  text-align: center;
+  font-size: 51px;
+  color: #fff;
+  width: 100%;
+  padding: 175px 20px  0;
+  background-color: transparent; }
+.header .details {
+  text-align: center;
+  font-size: 40px;
+  padding: 0 20px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.15; }
+
+/** Button Area **/
+.header .buttons {
+  text-align: center;
+  margin-top: 50px; }
+  .header .buttons a:link,
+  .header .buttons a:visited {
+    border: 2px solid #fff;
+    padding: 10px  16px;
+    font-weight: bold;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: none; }
+  .header .buttons a:hover,
+  .header .buttons a:active {
+    color: #26543a;
+    background-color: white; }
+
+/*************** MEDIA QUERIES FOR THE HEADER SECTION ****************/
+@media only screen and (max-width: 1024px) {
+  .header .slides .slide1,
+  .header .slides .slide2,
+  .header .slides .slide3,
+  .header .slides .slide4 {
+    height: 500px; }
+
+  .header .title {
+    font-size: 41px;
+    width: 100%;
+    margin-top: 136px;
+    padding: 0 10px; }
+  .header .details {
+    font-size: 30px;
+    padding: 0 10px; } }
+@media only screen and (max-width: 768px) {
+  /** Mobile Navigation **/
+  .mobile-container {
+    padding: 0; }
+
+  .mobileNavIcon {
+    display: block; }
+
+  .navigation {
+    background-color: rgba(0, 0, 0, 0.4); }
+
+  .header .navigation h1 {
+    font-size: 18px;
+    float: none;
+    color: #fff;
+    padding: 0 0 10px 15px; }
+
+  .header .navigation ul {
+    float: none;
+    display: none;
+    background-color: #26543a; }
+
+  .header .navigation nav {
+    width: 100%; }
+
+  .header .navigation ul li {
+    float: none; }
+
+  .header .navigation ul li a:hover,
+  .header .navigation ul li a:active {
+    color: #000; }
+
+  .is-sticky .navigation h1 {
+    color: #26543a; }
+
+  .is-sticky .navigation ul {
+    background-color: #26543a;
+    border-top: 1px solid #b5b2b2; }
+
+  .is-sticky .navigation nav ul a:link,
+  .is-sticky .navigation nav ul a:visited {
+    color: #fff; }
+
+  .is-sticky .navigation nav ul a:hover,
+  .is-sticky .navigation nav ul a:active {
+    color: #000; }
+
+  .is-sticky .navigation nav ul a.active {
+    color: #000; }
+
+  /** BG Slides **/
+  .header .slides .slide1 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.3))), url(../images/photos/header/small-bg-full-service-car-wash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../images/photos/header/small-bg-full-service-car-wash.jpg); }
+  .header .slides .slide2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/small-bg-super-clean-shine.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/small-bg-super-clean-shine.jpg); }
+  .header .slides .slide3 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/small-bg-first-class-wash.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/small-bg-first-class-wash.jpg); }
+  .header .slides .slide4 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.4))), url(../images/photos/header/small-bg-excellent-quality-services.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(../images/photos/header/small-bg-excellent-quality-services.jpg); } }
+@media only screen and (max-width: 650px) {
+  .header .title {
+    font-size: 31px; }
+
+  .header .details {
+    font-size: 25px; }
+
+  .header .buttons {
+    padding: 0 10px; } }
+@media only screen and (max-width: 350px) {
+  .header .navigation h1 {
+    font-size: 16px; }
+
+  .header .title {
+    font-size: 25px; }
+
+  .header .details {
+    font-size: 20px; }
+
+  .header .buttons {
+    margin-top: 30px; }
+
+  .header .buttons a {
+    padding: 10px  16px;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    text-align: center; } }
+/****************************************************/
+/*************** END: HEADER SECTION ****************/
+/****************************************************/
+/****************************************************/
+/*************** END: HEADER SECTION ****************/
+/****************************************************/
+/******************************************************/
+/************** START: ABOUT US SECTION ***************/
+/******************************************************/
+/******************************************************/
+/************** START: ABOUT US SECTION ***************/
+/******************************************************/
+.about-us {
+  margin-top: 575px;
+  padding-top: 85px;
+  padding-bottom: 80px; }
+
+/** About Us Title **/
+.about-us .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: -7px; }
+.about-us .title:after {
+  display: block;
+  content: "";
+  height: 12px;
+  width: 82px;
+  background-color: #26543a;
+  margin-top: 16px; }
+.about-us h2 {
+  margin-bottom: 28px; }
+
+/** About Us Description **/
+.about-us p {
+  font-size: 16px;
+  line-height: 140%; }
+.about-us .btn-default {
+  color: #fff;
+  background-color: #26543a;
+  border-color: transparent;
+  border-radius: 0;
+  margin-top: 10px; }
+.about-us .btn {
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+  border-radius: 0; }
+.about-us .btn:hover {
+  color: #26543a;
+  background-color: #fff;
+  border: 2px solid #26543a; }
+
+/** POPUP - ABOUT US READ MORE CONTENT  **/
+.about-us-popup {
+  position: relative;
+  background: #fff;
+  width: auto;
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 16px; }
+  .about-us-popup img {
+    width: 100%; }
+  .about-us-popup P {
+    padding: 20px; }
+
+/*************** MEDIA QUERIES FOR THE ABOUT US SECTION ****************/
+@media only screen and (max-width: 1024px) {
+  .about-us {
+    margin-top: 420px; } }
+@media only screen and (max-width: 991px) {
+  .about-us .btn {
+    margin-bottom: 25px; } }
+@media only screen and (max-width: 480px) {
+  .about-us .title {
+    font-size: 25px; }
+  .about-us .title:after {
+    height: 6px;
+    width: 42px;
+    margin-top: 10px; } }
+/****************************************************/
+/************** END: ABOUT US SECTION ***************/
+/****************************************************/
+/****************************************************/
+/************** END: ABOUT US SECTION ***************/
+/****************************************************/
+/***********************************************************/
+/************** START: WHY CHOOSE US SECTION ***************/
+/***********************************************************/
+/***********************************************************/
+/************** START: WHY CHOOSE US SECTION ***************/
+/***********************************************************/
+.why-choose-us {
+  background-color: #26543a;
+  color: #fff;
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+/** Why Choose US Introduction **/
+.why-choose-us .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 28px; }
+.why-choose-us .title:after {
+  display: block;
+  content: "";
+  height: 12px;
+  width: 82px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 16px; }
+.why-choose-us .col-md-4 h2 {
+  font-size: 22px;
+  font-weight: bold; }
+.why-choose-us p {
+  font-size: 16px;
+  line-height: 140%; }
+
+/*************** MEDIA QUERIES FOR THE WHY CHOOSE US SECTION ****************/
+@media only screen and (max-width: 991px) {
+  .why-choose-us img {
+    margin-top: 30px; } }
+@media only screen and (max-width: 480px) {
+  .why-choose-us .title {
+    font-size: 25px; }
+  .why-choose-us .title:after {
+    height: 6px;
+    width: 42px;
+    margin-top: 10px; } }
+/***********************************************************/
+/*************** END: WHY CHOOSE US SECTION ****************/
+/***********************************************************/
+/***********************************************************/
+/*************** END: WHY CHOOSE US SECTION ****************/
+/***********************************************************/
+/**********************************************************/
+/**************** START: GALLERY SECTION ******************/
+/**********************************************************/
+/**********************************************************/
+/**************** START: GALLERY SECTION ******************/
+/**********************************************************/
+.gallery .container {
+  text-align: center;
+  padding-top: 75px; }
+
+/** Gallery Introduction **/
+.gallery .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 28px; }
+.gallery .title:after {
+  display: block;
+  content: "";
+  height: 12px;
+  width: 82px;
+  background-color: #26543a;
+  margin: 0 auto;
+  margin-top: 16px; }
+.gallery p {
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 30px; }
+
+/** showcase Gallery **/
+.gallery .col-md-4 {
+  padding-bottom: 30px; }
+  .gallery .col-md-4 .showcase {
+    overflow: hidden; }
+    .gallery .col-md-4 .showcase a {
+      text-decoration: none; }
+.gallery img {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden; }
+.gallery img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2); }
+
+/*************** MEDIA QUERIES FOR THE GALLERY SECTION ****************/
+@media only screen and (max-width: 480px) {
+  .gallery .title {
+    font-size: 25px; }
+  .gallery .title:after {
+    height: 6px;
+    width: 42px;
+    margin-top: 10px; }
+  .gallery .col-xs-6 {
+    width: 100%; } }
+/*********************************************************/
+/****************** END: GALLERY SECTION *****************/
+/*********************************************************/
+/*********************************************************/
+/****************** END: GALLERY SECTION *****************/
+/*********************************************************/
+/**********************************************************/
+/************** START: TESTIMONIALS SECTION ***************/
+/**********************************************************/
+/**********************************************************/
+/************** START: TESTIMONIALS SECTION ***************/
+/**********************************************************/
+.testimonials {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/photos/car-wash-client-testimonials/bg-car-wash-client-testimonials.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/photos/car-wash-client-testimonials/bg-car-wash-client-testimonials.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-attachment: fixed;
+  height: 460px;
+  color: #fff;
+  margin-top: 52px; }
+  .testimonials p {
+    font-size: 16px;
+    text-align: center;
+    padding: 155px 10px 120px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 150%; }
+
+/*************** MEDIA QUERIES FOR THE TESTIMONIALS SECTION ****************/
+@media only screen and (max-width: 700px) {
+  .testimonials {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/photos/car-wash-client-testimonials/small-bg-car-wash-client-testimonials.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/photos/car-wash-client-testimonials/small-bg-car-wash-client-testimonials.jpg); } }
+@media only screen and (max-width: 480px) {
+  .testimonials .container p {
+    padding: 145px 10px 80px; } }
+@media only screen and (max-width: 320px) {
+  .testimonials .container p {
+    padding: 120px 10px 80px; } }
+/********************************************************/
+/************** END: TESTIMONIALS SECTION ***************/
+/********************************************************/
+/********************************************************/
+/************** END: TESTIMONIALS SECTION ***************/
+/********************************************************/
+/*****************************************************************/
+/************** START: CAR WASH PACKAGES SECTION *****************/
+/*****************************************************************/
+/*****************************************************************/
+/************** START: CAR WASH PACKAGES SECTION *****************/
+/*****************************************************************/
+.car-wash-packages .container {
+  text-align: center;
+  padding-top: 75px; }
+
+/** Car Wash Packages Introduction **/
+.car-wash-packages .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 28px; }
+.car-wash-packages .title:after {
+  display: block;
+  content: "";
+  height: 12px;
+  width: 82px;
+  background-color: #26543a;
+  margin: 0 auto;
+  margin-top: 16px; }
+.car-wash-packages .col-md-12 {
+  margin-bottom: 28px; }
+  .car-wash-packages .col-md-12 p {
+    max-width: 900px;
+    margin: 0 auto; }
+.car-wash-packages p {
+  font-size: 16px;
+  line-height: 140%; }
+
+/** Our Packages **/
+.car-wash-packages .thumbnail {
+  display: block;
+  padding: 0;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #26543a;
+  border: 1px solid #26543a;
+  border-radius: 0; }
+  .car-wash-packages .thumbnail h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #26543a; }
+  .car-wash-packages .thumbnail p {
+    color: #fff;
+    background-color: #26543a;
+    line-height: 300%; }
+  .car-wash-packages .thumbnail p.price {
+    background-color: #fff;
+    color: #26543a;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 140%; }
+
+/*************** MEDIA QUERIES FOR THE CAR WASH PACKAGES SECTION ****************/
+@media only screen and (max-width: 480px) {
+  .car-wash-packages .title {
+    font-size: 25px; }
+  .car-wash-packages .title:after {
+    height: 6px;
+    width: 42px;
+    margin-top: 10px; } }
+/***************************************************************/
+/************** END: CAR WASH PACKAGES SECTION *****************/
+/***************************************************************/
+/***************************************************************/
+/************** END: CAR WASH PACKAGES SECTION *****************/
+/***************************************************************/
+/*************************************************************/
+/************** START: OPERATING HOURS SECTION ***************/
+/*************************************************************/
+/*************************************************************/
+/************** START: OPERATING HOURS SECTION ***************/
+/*************************************************************/
+.operating-hours {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/photos/car-wash-operating-hours/bg-operating-hours.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/photos/car-wash-operating-hours/bg-operating-hours.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-attachment: fixed;
+  height: 460px;
+  color: #fff;
+  margin-top: 62px; }
+  .operating-hours p {
+    font-size: 36px;
+    text-align: center;
+    padding: 150px   10px 120px;
+    line-height: 150%; }
+
+/*************** MEDIA QUERIES FOR THE OPERATING HOURS SECTION ****************/
+@media only screen and (max-width: 700px) {
+  .operating-hours {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../images/photos/car-wash-operating-hours/small-bg-operating-hours.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/photos/car-wash-operating-hours/small-bg-operating-hours.jpg); }
+    .operating-hours p {
+      font-size: 24px;
+      padding: 180px   10px 120px; } }
+@media only screen and (max-width: 490px) {
+  .operating-hours p {
+    font-size: 24px;
+    padding: 160px   10px 120px; } }
+@media only screen and (max-width: 320px) {
+  .operating-hours p {
+    font-size: 18px;
+    padding: 180px   10px 120px; } }
+/***********************************************************/
+/************** END: OPERATING HOURS SECTION ***************/
+/***********************************************************/
+/***********************************************************/
+/************** END: OPERATING HOURS SECTION ***************/
+/***********************************************************/
+/**********************************************************/
+/************** START: CONTACT US SECTION *****************/
+/**********************************************************/
+/**********************************************************/
+/************** START: CONTACT US SECTION *****************/
+/**********************************************************/
+.contact-us .container {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 80px; }
+
+/** Contact Us Introduction **/
+.contact-us .title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 28px; }
+.contact-us .title:after {
+  display: block;
+  content: "";
+  height: 12px;
+  width: 82px;
+  background-color: #26543a;
+  margin: 0 auto;
+  margin-top: 16px; }
+.contact-us .col-md-12 {
+  margin-bottom: 28px; }
+  .contact-us .col-md-12 p {
+    max-width: 900px;
+    margin: 0 auto  30px; }
+.contact-us p {
+  font-size: 16px;
+  line-height: 140%; }
+
+/** Contact Details **/
+.contact-us .col-md-4 p {
+  margin: 15px 0 15px; }
+
+/** Contact FORM **/
+.contact-us .form-control {
+  height: 0;
+  padding: 20px 15px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 0; }
+.contact-us textarea {
+  margin-top: 20px;
+  min-height: 245px; }
+.contact-us input::-webkit-input-placeholder,
+.contact-us textarea::-webkit-input-placeholder {
+  color: #636363; }
+.contact-us .btn {
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 0;
+  color: #fff;
+  background-color: #26543a;
+  border: 3px solid transparent;
+  width: 260px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
+.contact-us .btn:hover {
+  background-color: #fff;
+  color: #26543a;
+  border: 3px solid #26543a; }
+
+/*************** MEDIA QUERIES FOR THE CONTACT SECTION ****************/
+@media only screen and (max-width: 991px) {
+  .contact-us .col-md-4 p {
+    margin: 15px 0 25px; }
+  .contact-us input[type=text],
+  .contact-us input[type=tel],
+  .contact-us input[type=email] {
+    margin-bottom: 5px; }
+  .contact-us textarea {
+    margin-top: 5px; } }
+@media only screen and (max-width: 480px) {
+  .contact-us .title {
+    font-size: 25px; }
+  .contact-us .title:after {
+    height: 6px;
+    width: 42px;
+    margin-top: 10px; }
+  .contact-us .btn {
+    width: auto; } }
+/**********************************************************/
+/************** END: CONTACT US SECTION *******************/
+/**********************************************************/
+/**********************************************************/
+/************** END: CONTACT US SECTION *******************/
+/**********************************************************/
+/****************************************************/
+/*************** START: MAP SECTION *****************/
+/****************************************************/
+/****************************************************/
+/*************** START: MAP SECTION *****************/
+/****************************************************/
+#map {
+  width: 100%;
+  height: 532px;
+  background-color: #26543a; }
+
+/******************************************************/
+/***************** END: MAP SECTION *******************/
+/******************************************************/
+/******************************************************/
+/***************** END: MAP SECTION *******************/
+/******************************************************/
+/******************************************************/
+/*************** START: FOOTER SECTION ****************/
+/******************************************************/
+/******************************************************/
+/*************** START: FOOTER SECTION ****************/
+/******************************************************/
+.footer {
+  font-size: 16px; }
+  .footer .copyright {
+    padding: 56px 0; }
+  .footer .social-media {
+    padding: 47px 0; }
+
+/** Copyright **/
+.footer .copyright a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #26543a; }
+
+/** Social Media Icons **/
+.footer ul {
+  list-style-type: none;
+  float: right; }
+  .footer ul li {
+    float: left; }
+    .footer ul li a {
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 8px 5px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #26543a;
+      background-color: #26543a;
+      color: #fff;
+      border-radius: 100px;
+      text-align: center;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      float: left; }
+    .footer ul li a:hover {
+      background-color: #fff;
+      color: #26543a;
+      border: 1px solid #26543a; }
+
+/** Scroll To Top **/
+.scroll-to-top {
+  right: 20px;
+  bottom: 20px;
+  font-size: 25px;
+  padding: 5px 15px 10px;
+  background-color: #26543a;
+  color: #fff;
+  border: 1px solid #fff;
+  position: fixed;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  display: none; }
+
+.scroll-to-top:hover {
+  background-color: #0ee56b; }
+
+/*************** MEDIA QUERIES FOR THE FOOTER SECTION ****************/
+@media only screen and (max-width: 991px) {
+  .footer .copyright,
+  .footer .social-media {
+    text-align: center; }
+  .footer ul {
+    float: none; }
+    .footer ul li {
+      float: none;
+      text-align: center;
+      display: inline-block; }
+  .footer .copyright {
+    padding: 56px 0 10px; }
+  .footer .social-media {
+    padding: 0  0  47px; } }
+/******************************************************/
+/*************** END: FOOTER SECTION ******************/
+/******************************************************/
+/******************************************************/
+/*************** END: FOOTER SECTION ******************/
+/******************************************************/
+/*********************************************************/
+/************** START: CUSTOMISING PLUGINS ***************/
+/*********************************************************/
+/******************************************************************************/
+/******************* START: Customising The SLICK Plugin  *********************/
+/******************************************************************************/
+/** Dots **/
+.slick-dots {
+  bottom: 25px; }
+
+.slick-dots li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  background: transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  text-indent: -999em;
+  border: 1px solid #fff;
+  cursor: pointer; }
+
+.slick-dots li.slick-active {
+  background: #fff;
+  cursor: default; }
+
+/** Arrows **/
+.slick-prev {
+  left: 25px;
+  z-index: 999; }
+
+.slick-next {
+  right: 25px; }
+
+/******************************************************************************/
+/******************** END: Customising The SLICK Plugin  **********************/
+/******************************************************************************/
+/******************************************************************************/
+/***************  START: Customising Magnific Pop Up Plugin  ******************/
+/******************************************************************************/
+/******* Zoom effect *******/
+/* start state */
+.mfp-zoom-in .mfp-with-anim {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8); }
+
+.mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+/* animate in */
+.mfp-zoom-in.mfp-ready .mfp-with-anim {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1); }
+
+.mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8; }
+
+/* animate out */
+.mfp-zoom-in.mfp-removing .mfp-with-anim {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0; }
+
+.mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0; }
+
+/******************************************************************************/
+/****************  END: Customising Magnific Pop Up Plugin  *******************/
+/******************************************************************************/
+/*****************************************************************************************/
+/******************* START: Customising The jQuery Validation Plugin *********************/
+/*****************************************************************************************/
+.contact-us .comment-form label.error {
+  color: #e74c3c; }
+
+.contact-us .comment-form input.error,
+.contact-us .comment-form textarea.error {
+  border: 2px solid #e74c3c;
+  outline: none; }
+
+/***************************************************************************************/
+/******************* END: Customising The jQuery Validation Plugin *********************/
+/***************************************************************************************/
+/*******************************************************************/
+/******************* Hidding Elements On Slide *********************/
+/*******************************************************************/
+.js-hidden {
+  visibility: hidden; }
+
+/****************************************************************/
+/******************* END: Elements On Slide *********************/
+/****************************************************************/
+/*********************************************************/
+/*************** END: CUSTOMISING PLUGINS ****************/
+/*********************************************************/
+
+/*# sourceMappingURL=main.css.map */

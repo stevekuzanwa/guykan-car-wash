@@ -1,0 +1,87 @@
+
+
+/***********************************************************/
+/************** START: WHY CHOOSE US SECTION ***************/
+/***********************************************************/
+
+.why-choose-us {
+   background-color: #26543a;
+   color:#fff;
+   text-align: center;
+   padding-top: 75px;
+   padding-bottom: 75px;
+}
+
+/** Why Choose US Introduction **/
+
+.why-choose-us {
+    
+    .title {
+       font-size: 30px;
+       font-weight: bold;
+       margin-top: 0;
+       margin-bottom: 28px;
+    }
+    
+    .title:after {
+       display: block;
+       content:"";
+       height:12px;
+       width: 82px;
+       background-color: #fff;
+       margin: 0 auto;
+       margin-top: 16px;
+    }
+    
+    .col-md-4 {
+        
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+    
+} 
+
+/*************** MEDIA QUERIES FOR THE WHY CHOOSE US SECTION ****************/
+
+@media only screen and (max-width: 991px) {
+    
+    .why-choose-us {
+        
+        img {
+            margin-top: 30px;
+        }
+        
+    }  
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .why-choose-us {
+        
+        .title {
+           font-size: 25px;
+        }
+        
+        .title:after {
+           height:6px;
+           width: 42px;
+           margin-top: 10px;
+        }
+
+    }  
+    
+}
+
+
+/***********************************************************/
+/*************** END: WHY CHOOSE US SECTION ****************/
+/***********************************************************/

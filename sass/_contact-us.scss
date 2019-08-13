@@ -1,0 +1,170 @@
+
+
+/**********************************************************/
+/************** START: CONTACT US SECTION *****************/
+/**********************************************************/
+
+.contact-us {
+    
+    .container {
+        text-align: center;
+        padding-top: 75px;
+        padding-bottom: 80px;
+    }
+    
+} 
+
+/** Contact Us Introduction **/
+
+.contact-us {
+    
+    .title  {
+       font-size: 30px;
+       font-weight: bold;
+       margin-top: 0;
+       margin-bottom: 28px;
+    }
+    
+    .title:after {
+       display: block;
+       content:"";
+       height:12px;
+       width: 82px;
+       background-color: #26543a;
+       margin: 0 auto;
+       margin-top: 16px;
+    }
+    
+    .col-md-12 {
+        margin-bottom: 28px;
+        
+        p {
+            max-width: 900px;
+            margin: 0 auto  30px;
+        }
+    }
+    
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    
+} 
+
+
+/** Contact Details **/
+
+.contact-us {
+    
+    .col-md-4 {
+        
+        p {
+            margin: 15px 0 15px;
+        }
+    } 
+    
+} 
+
+/** Contact FORM **/
+
+.contact-us {
+    
+    .form-control {
+        height: 0;
+        padding: 20px 15px;
+        font-size: 16px;
+        background-color: #fff;
+        border: 1px solid #000;
+        border-radius: 0;
+    }
+    
+    textarea {
+        margin-top: 20px;
+        min-height: 245px;
+    }
+    
+    input::-webkit-input-placeholder, 
+    textarea::-webkit-input-placeholder {
+        color: #636363;
+    }
+    
+    .btn  {
+        padding: 15px;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 0;
+        color: #fff;
+        background-color: #26543a;
+        border: 3px solid transparent;
+        width: 260px;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    
+    .btn:hover {
+        background-color: #fff;
+        color: #26543a;
+        border: 3px solid #26543a;
+    }
+    
+    
+} 
+
+
+/*************** MEDIA QUERIES FOR THE CONTACT SECTION ****************/
+
+
+@media only screen and (max-width: 991px) {
+    
+    .contact-us {
+        
+        .col-md-4 {
+            
+            p {
+                margin: 15px 0 25px;
+            }
+            
+        }
+        
+        input[type=text],
+        input[type=tel],
+        input[type=email] {
+            margin-bottom: 5px;
+        }
+        
+        textarea {
+            margin-top: 5px;
+        }
+      
+    } 
+
+}
+
+
+@media only screen and (max-width: 480px) {
+    
+    .contact-us {
+        
+        .title {
+            font-size: 25px;
+        }
+        
+        .title:after {
+            height:6px;
+            width: 42px;
+            margin-top: 10px;
+        }
+        
+        .btn {
+            width: auto;
+        }
+        
+    } 
+
+}
+
+
+/**********************************************************/
+/************** END: CONTACT US SECTION *******************/
+/**********************************************************/
